@@ -1,93 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-16T15:10:29 IST" name="Default suite" finished-at="2022-02-16T15:10:29 IST" duration-ms="87">
+  <suite started-at="2022-02-16T15:38:43 IST" name="Default suite" finished-at="2022-02-16T15:38:44 IST" duration-ms="983">
     <groups>
     </groups>
-    <test started-at="2022-02-16T15:10:29 IST" name="Default test" finished-at="2022-02-16T15:10:29 IST" duration-ms="87">
+    <test started-at="2022-02-16T15:38:43 IST" name="Default test" finished-at="2022-02-16T15:38:44 IST" duration-ms="983">
       <class name="tests.HomePageTestCase">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HomePageTestCase@5876a9af]" started-at="2022-02-16T15:10:29 IST" name="setup" finished-at="2022-02-16T15:10:29 IST" duration-ms="49" status="FAIL">
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from https://chromedriver.storage.googleapis.com/index.html]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from https://chromedriver.storage.googleapis.com/index.html
-at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:280)
-at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:135)
-at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:38)
-at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:231)
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
-at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:127)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:46)
-at tests.BaseTest.setup(BaseTest.java:13)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:368)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HomePageTestCase@77847718]" started-at="2022-02-16T15:38:30 IST" name="setup" finished-at="2022-02-16T15:38:43 IST" duration-ms="13233" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:0, instance:tests.HomePageTestCase@5876a9af]" started-at="2022-02-16T15:10:29 IST" name="loginTest" finished-at="2022-02-16T15:10:29 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from https://chromedriver.storage.googleapis.com/index.html]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from https://chromedriver.storage.googleapis.com/index.html
-at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:280)
-at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:135)
-at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:38)
-at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:231)
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
-at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:127)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:46)
-at tests.BaseTest.setup(BaseTest.java:13)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:368)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
+        <test-method signature="signInTest()[pri:0, instance:tests.HomePageTestCase@77847718]" started-at="2022-02-16T15:38:44 IST" name="signInTest" finished-at="2022-02-16T15:38:44 IST" duration-ms="936" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.HomePageTestCase@5876a9af]" started-at="2022-02-16T15:10:29 IST" name="teardown" finished-at="2022-02-16T15:10:29 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- signInTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.HomePageTestCase@77847718]" started-at="2022-02-16T15:38:45 IST" name="teardown" finished-at="2022-02-16T15:38:45 IST" duration-ms="477" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
