@@ -2,6 +2,9 @@ package tests;
 
 import org.openqa.selenium.By;
 import static org.testng.Assert.assertEquals;
+
+import java.time.Duration;
+
 import org.testng.annotations.Test;
 
 public class HomePageTestCase extends BaseTest {
@@ -10,17 +13,22 @@ public class HomePageTestCase extends BaseTest {
 	By email=By.xpath("//input[@name='email']");
 	By pass=By.xpath("//input[@name='password']");
 	By btnLogin=By.xpath("//button[@type='submit']");
-	@Test
+	By userDet=By.xpath("//h4//strong[text()='Demo']");
+	@Test(priority = 1)
 	public void signInLink() {
 		driver.findElement(anchorSignIn).click();
 		assertEquals("Login - PHPTRAVELS",driver.getTitle());
 		
 	}
-	public void loginTest() {
+	@Test(priority = 2)
+	public void loginTest() throws Exception {
+		Thread.sleep(2000);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.findElement(email).sendKeys("agent@phptravels.com");
 		driver.findElement(pass).sendKeys("demoagent");
 		driver.findElement(btnLogin).click();
-		assertEquals("Actual", "expected");
-		
+		String userName=driver.findElement(userDet).getText();
+		System.out.println(userName);
+		//assertEquals("[Demo]", userName);
 	}
 }
