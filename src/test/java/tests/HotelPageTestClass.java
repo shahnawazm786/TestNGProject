@@ -13,21 +13,23 @@ public class HotelPageTestClass extends BaseTest {
 
 	By searchHotel=By.xpath("//span[text()=' Search by City']");
 	By inputCity=By.xpath("//input[@class='select2-search__field']");
-	By selCity=By.tagName("li");
+	By selCity=By.xpath("//li[text()='Paris,France']");
+	By btnSubmit=By.id("submit");
 	@Test
 	public void searchHotel() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.findElement(searchHotel).click();
-		driver.findElement(inputCity).sendKeys("Del");
+		driver.findElement(inputCity).sendKeys("Pari");
+		driver.findElement(selCity).click();
 		//Thread.sleep(2000);
-		List<WebElement> elements=driver.findElements(selCity);
+		/*List<WebElement> elements=driver.findElements(selCity);
 		for(WebElement e:elements) {
 			System.out.println(e.getText());
 			if(e.getText().contains("Del")) {
 				e.sendKeys(Keys.ENTER);
 				break;
 			}
-		}
+		}*/
 		//Actions act=new Actions(driver);
 		//act.sendKeys(Keys.ARROW_DOWN).build().perform();
 		//act.sendKeys(Keys.ARROW_DOWN).build().perform();
@@ -35,6 +37,7 @@ public class HotelPageTestClass extends BaseTest {
 		//act.keyDown(Keys.ARROW_DOWN).build().perform();
 		//act.keyDown(Keys.ARROW_DOWN).build().perform();
 		//act.sendKeys(Keys.ENTER).build().perform();
-		//Thread.sleep(5000);	
+		//Thread.sleep(5000);
+		driver.findElement(btnSubmit).click();
 	}
 }
