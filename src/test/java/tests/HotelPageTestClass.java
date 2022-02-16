@@ -13,17 +13,19 @@ public class HotelPageTestClass extends BaseTest {
 
 	By searchHotel=By.xpath("//span[text()=' Search by City']");
 	By inputCity=By.xpath("//input[@class='select2-search__field']");
-	By selCity=By.tagName("option");
+	By selCity=By.tagName("li");
 	@Test
 	public void searchHotel() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.findElement(searchHotel).click();
-		driver.findElement(inputCity).sendKeys("Delhi");
+		driver.findElement(inputCity).sendKeys("Del");
 		//Thread.sleep(2000);
 		List<WebElement> elements=driver.findElements(selCity);
 		for(WebElement e:elements) {
-			if(e.getText().contentEquals("Delhi")) {
-				e.click();
+			System.out.println(e.getText());
+			if(e.getText().contains("Del")) {
+				e.sendKeys(Keys.ENTER);
+				break;
 			}
 		}
 		//Actions act=new Actions(driver);

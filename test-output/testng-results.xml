@@ -2,26 +2,54 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-16T17:23:57 IST" name="Default suite" finished-at="2022-02-16T17:23:59 IST" duration-ms="2404">
+  <suite started-at="2022-02-16T17:44:06 IST" name="Default suite" finished-at="2022-02-16T17:44:08 IST" duration-ms="2645">
     <groups>
     </groups>
-    <test started-at="2022-02-16T17:23:57 IST" name="Default test" finished-at="2022-02-16T17:23:59 IST" duration-ms="2404">
+    <test started-at="2022-02-16T17:44:06 IST" name="Default test" finished-at="2022-02-16T17:44:08 IST" duration-ms="2645">
       <class name="tests.HotelPageTestClass">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HotelPageTestClass@77847718]" started-at="2022-02-16T17:23:47 IST" name="setup" finished-at="2022-02-16T17:23:57 IST" duration-ms="9482" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HotelPageTestClass@2b662a77]" started-at="2022-02-16T17:43:56 IST" name="setup" finished-at="2022-02-16T17:44:06 IST" duration-ms="9338" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchHotel()[pri:0, instance:tests.HotelPageTestClass@77847718]" started-at="2022-02-16T17:23:57 IST" name="searchHotel" finished-at="2022-02-16T17:23:59 IST" duration-ms="2343" status="FAIL">
-          <exception class="java.lang.IllegalArgumentException">
+        <test-method signature="searchHotel()[pri:0, instance:tests.HotelPageTestClass@2b662a77]" started-at="2022-02-16T17:44:06 IST" name="searchHotel" finished-at="2022-02-16T17:44:08 IST" duration-ms="2585" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[Key Down / Up events only make sense for modifier keys.]]>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-8DBLLD3', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d94a00b3ebffa5f66f3af2d3c84a6b19, getElementText {id=f18a3a7b-ad0e-4344-895f-3666b1405720}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53703}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53703/devtoo..., se:cdpVersion: 98.0.4758.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d94a00b3ebffa5f66f3af2d3c84a6b19)] -> tag name: li]
+Session ID: d94a00b3ebffa5f66f3af2d3c84a6b19]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Key Down / Up events only make sense for modifier keys.
-at org.openqa.selenium.interactions.internal.SingleKeyAction.<init>(SingleKeyAction.java:49)
-at org.openqa.selenium.interactions.internal.SingleKeyAction.<init>(SingleKeyAction.java:37)
-at org.openqa.selenium.interactions.KeyDownAction.<init>(KeyDownAction.java:41)
-at org.openqa.selenium.interactions.Actions.keyDown(Actions.java:91)
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-8DBLLD3', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d94a00b3ebffa5f66f3af2d3c84a6b19, getElementText {id=f18a3a7b-ad0e-4344-895f-3666b1405720}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53703}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53703/devtoo..., se:cdpVersion: 98.0.4758.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d94a00b3ebffa5f66f3af2d3c84a6b19)] -> tag name: li]
+Session ID: d94a00b3ebffa5f66f3af2d3c84a6b19
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:201)
 at tests.HotelPageTestClass.searchHotel(HotelPageTestClass.java:25)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -53,11 +81,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchHotel -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.HotelPageTestClass@77847718]" started-at="2022-02-16T17:23:59 IST" name="teardown" finished-at="2022-02-16T17:23:59 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.HotelPageTestClass@2b662a77]" started-at="2022-02-16T17:44:09 IST" name="teardown" finished-at="2022-02-16T17:44:09 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
