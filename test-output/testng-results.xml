@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-16T16:31:58 IST" name="Default suite" finished-at="2022-02-16T16:32:04 IST" duration-ms="5427">
+  <suite started-at="2022-02-16T16:43:16 IST" name="Default suite" finished-at="2022-02-16T16:43:19 IST" duration-ms="3686">
     <groups>
     </groups>
-    <test started-at="2022-02-16T16:31:58 IST" name="Default test" finished-at="2022-02-16T16:32:04 IST" duration-ms="5427">
+    <test started-at="2022-02-16T16:43:16 IST" name="Default test" finished-at="2022-02-16T16:43:19 IST" duration-ms="3686">
       <class name="tests.HomePageTestCase">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HomePageTestCase@57a3af25]" started-at="2022-02-16T16:31:48 IST" name="setup" finished-at="2022-02-16T16:31:58 IST" duration-ms="9931" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HomePageTestCase@57a3af25]" started-at="2022-02-16T16:43:08 IST" name="setup" finished-at="2022-02-16T16:43:16 IST" duration-ms="8210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="signInLink()[pri:1, instance:tests.HomePageTestCase@57a3af25]" started-at="2022-02-16T16:31:58 IST" name="signInLink" finished-at="2022-02-16T16:31:59 IST" duration-ms="839" status="PASS">
+        <test-method signature="signInLink()[pri:1, instance:tests.HomePageTestCase@57a3af25]" started-at="2022-02-16T16:43:16 IST" name="signInLink" finished-at="2022-02-16T16:43:17 IST" duration-ms="891" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signInLink -->
-        <test-method signature="loginTest()[pri:2, instance:tests.HomePageTestCase@57a3af25]" started-at="2022-02-16T16:31:59 IST" name="loginTest" finished-at="2022-02-16T16:32:04 IST" duration-ms="4522" status="PASS">
+        <test-method signature="loginTest()[pri:2, instance:tests.HomePageTestCase@57a3af25]" started-at="2022-02-16T16:43:17 IST" name="loginTest" finished-at="2022-02-16T16:43:19 IST" duration-ms="2753" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.HomePageTestCase@57a3af25]" started-at="2022-02-16T16:32:04 IST" name="teardown" finished-at="2022-02-16T16:32:04 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.HomePageTestCase@57a3af25]" started-at="2022-02-16T16:43:20 IST" name="teardown" finished-at="2022-02-16T16:43:20 IST" duration-ms="505" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
