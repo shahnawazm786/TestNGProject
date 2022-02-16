@@ -13,14 +13,14 @@ public class HotelPageTestClass extends BaseTest {
 
 	By searchHotel=By.xpath("//span[text()=' Search by City']");
 	By inputCity=By.xpath("//input[@class='select2-search__field']");
-	By selCity=By.xpath("//li[text()='Paris,France']");
+	By selCity=By.xpath("//li[contains(text(),'Paris,France')]");
 	By btnSubmit=By.id("submit");
 	@Test
 	public void searchHotel() throws InterruptedException {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.findElement(searchHotel).click();
-		driver.findElement(inputCity).sendKeys("Pari");
-		driver.findElement(selCity).click();
+		driver.findElement(inputCity).sendKeys("Paris");
+		waitForElementClickable(driver, selCity,2).click();
 		//Thread.sleep(2000);
 		/*List<WebElement> elements=driver.findElements(selCity);
 		for(WebElement e:elements) {
