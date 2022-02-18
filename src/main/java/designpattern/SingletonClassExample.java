@@ -11,8 +11,15 @@ public class SingletonClassExample {
 	// private consturctor it is achieved
 	// 2nd object can be created by using reflection (loop hole)
 	public static SingletonClassExample getInstance() {
+		
 		if(sce==null) {
-			sce=new SingletonClassExample();
+			synchronized (SingletonClassExample.class) {
+				if(sce==null)
+				{
+					sce=new SingletonClassExample();
+				}
+			}
+			//sce=new SingletonClassExample();
 		}
 		return sce;
 	}
