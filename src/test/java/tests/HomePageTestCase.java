@@ -16,7 +16,7 @@ public class HomePageTestCase extends BaseTest {
 	By pass=By.xpath("//input[@name='password']");
 	By btnLogin=By.xpath("//button[@type='submit']");
 	By userDet=By.xpath("//h4//strong[text()='Demo']");
-	By dash=By.xpath(" //a[text()=' Dashboard']");
+	By dash=By.xpath("//span[text()='Demo']");
 	@Test(priority = 1)
 	public void signInLink() {
 		driver.findElement(anchorSignIn).click();
@@ -32,9 +32,10 @@ public class HomePageTestCase extends BaseTest {
 		driver.findElement(btnLogin).click();
 		JavascriptExecutor jse=(JavascriptExecutor)driver;
 		jse.executeScript("window.scrollBy(0,document.body.scrollHeight)");
-		String userName=driver.findElement(userDet).getText();
+		Thread.sleep(2000);
+		String userName=driver.findElement(dash).getText();
 		//System.out.println(userName);
-		driver.findElement(dash).click();
+		//driver.findElement(dash).click();
 		assertEquals("Demo", userName);
 	}
 }
