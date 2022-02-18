@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-TestNG_Suits" class="navigator-link">
-              <span class="suite-name border-failed">TestNG Suits</span>
+              <span class="suite-name border-passed">TestNG Suits</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-TestNG_Suits" class="hide-methods failed suite-TestNG_Suits"> (hide)</a> <!-- hide-methods failed suite-TestNG_Suits -->
-                      <a href="#" panel-name="suite-TestNG_Suits" class="show-methods failed suite-TestNG_Suits"> (show)</a> <!-- show-methods failed suite-TestNG_Suits -->
-                    </span>
-                    <div class="method-list-content failed suite-TestNG_Suits">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestNG_Suits" title="tests.HotelPageTestClass" class="method navigator-link" hash-for-method="searchHotel">searchHotel</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-TestNG_Suits -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -119,6 +105,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-TestNG_Suits" title="tests.HomePageTestCase" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNG_Suits" title="tests.HotelPageTestClass" class="method navigator-link" hash-for-method="searchHotel">searchHotel</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -138,45 +129,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TestNG_Suits" class="panel TestNG_Suits">
-          <div class="suite-TestNG_Suits-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">tests.HotelPageTestClass</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchHotel">
-                  </a> <!-- searchHotel -->
-                  <span class="method-name">searchHotel</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos; Search by City&apos;]&quot;}
-  (Session info: chrome=98.0.4758.82)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
-System info: host: &apos;DESKTOP-8DBLLD3&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5ef4ba61298fec98d745d64fa000fa50, findElement {using=xpath, value=//span[text()=&apos; Search by City&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53999}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53999/devtoo..., se:cdpVersion: 98.0.4758.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5ef4ba61298fec98d745d64fa000fa50
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at tests.HotelPageTestClass.searchHotel(HotelPageTestClass.java:21)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestNG_Suits-class-failed -->
           <div class="suite-TestNG_Suits-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -195,6 +147,21 @@ Session ID: 5ef4ba61298fec98d745d64fa000fa50
                   <a name="signInLink">
                   </a> <!-- signInLink -->
                   <span class="method-name">signInLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNG_Suits-class-passed -->
+          <div class="suite-TestNG_Suits-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.HotelPageTestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchHotel">
+                  </a> <!-- searchHotel -->
+                  <span class="method-name">searchHotel</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -254,22 +221,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTest')
-data.setCell(0, 2, 'tests.HomePageTestCase')
-data.setCell(0, 3, 3673);
+data.setCell(0, 1, 'searchHotel')
+data.setCell(0, 2, 'tests.HotelPageTestClass')
+data.setCell(0, 3, 7934);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'signInLink')
+data.setCell(1, 1, 'loginTest')
 data.setCell(1, 2, 'tests.HomePageTestCase')
-data.setCell(1, 3, 1139);
+data.setCell(1, 3, 3880);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'searchHotel')
-data.setCell(2, 2, 'tests.HotelPageTestClass')
-data.setCell(2, 3, 48);
+data.setCell(2, 1, 'signInLink')
+data.setCell(2, 2, 'tests.HomePageTestCase')
+data.setCell(2, 3, 783);
 window.suiteTableData['TestNG_Suits']= { tableData: data, tableDiv: 'times-div-TestNG_Suits'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-TestNG_Suits">
               </div> <!-- times-div-TestNG_Suits -->
             </div> <!-- times-div -->
@@ -284,18 +251,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-TestNG_Suits" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">tests.HotelPageTestClass</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setup</span>
-                <br/>
-                <span class="ignored-method-name">teardown</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-TestNG_Suits" class="panel">
@@ -305,34 +263,37 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">tests.HomePageTestCase</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
+              <div class="configuration-class before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-suite before -->
+              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">signInLink</span>
-                <span class="method-start">12443 ms</span>
+                <span class="method-start">9530 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">13595 ms</span>
+                <span class="method-start">10339 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">14222 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.HotelPageTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">15010 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">searchHotel</span>
-                <span class="method-start">17272 ms</span>
+                <span class="method-start">33924 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.HomePageTestCase</div> <!-- chronological-class-name -->
-              <div class="configuration-suite after">
+              <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">17395 ms</span>
-              </div> <!-- configuration-suite after -->
+                <span class="method-start">41869 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
