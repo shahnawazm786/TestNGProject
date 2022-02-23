@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,17 +104,7 @@
                     <div class="method-list-content passed suite-TestNG_Suits">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestNG_Suits" title="tests.HomePageTestCase" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestNG_Suits" title="tests.HotelPageTestClass" class="method navigator-link" hash-for-method="searchHotel">searchHotel</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestNG_Suits" title="tests.HomePageTestCase" class="method navigator-link" hash-for-method="signInLink">signInLink</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TestNG_Suits" title="test2.TestNGParameterExample" class="method navigator-link" hash-for-method="Test(testng)">Test(testng)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TestNG_Suits -->
@@ -132,36 +122,15 @@
           <div class="suite-TestNG_Suits-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.HomePageTestCase</span>
+              <span class="class-name">test2.TestNGParameterExample</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
-                  <span class="method-name">loginTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="signInLink">
-                  </a> <!-- signInLink -->
-                  <span class="method-name">signInLink</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestNG_Suits-class-passed -->
-          <div class="suite-TestNG_Suits-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.HotelPageTestClass</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchHotel">
-                  </a> <!-- searchHotel -->
-                  <span class="method-name">searchHotel</span>
+                  <a name="Test(testng)">
+                  </a> <!-- Test(testng) -->
+                  <span class="method-name">Test</span>
+                  <span class="parameters">(testng)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -176,10 +145,10 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;TestNG Suits&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;para&quot; value=&quot;testng&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;HomePage&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.HomePageTestCase&quot;/&gt;
-      &lt;class name=&quot;tests.HotelPageTestClass&quot;/&gt;
+      &lt;class name=&quot;test2.TestNGParameterExample&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- HomePage --&gt;
 &lt;/suite&gt; &lt;!-- TestNG Suits --&gt;
@@ -193,7 +162,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">HomePage (2 classes)</span>
+                <span class="test-name">HomePage (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -219,24 +188,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'searchHotel')
-data.setCell(0, 2, 'tests.HotelPageTestClass')
-data.setCell(0, 3, 7934);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginTest')
-data.setCell(1, 2, 'tests.HomePageTestCase')
-data.setCell(1, 3, 3880);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'signInLink')
-data.setCell(2, 2, 'tests.HomePageTestCase')
-data.setCell(2, 3, 783);
+data.setCell(0, 1, 'Test')
+data.setCell(0, 2, 'test2.TestNGParameterExample')
+data.setCell(0, 3, 15376);
 window.suiteTableData['TestNG_Suits']= { tableData: data, tableDiv: 'times-div-TestNG_Suits'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-TestNG_Suits">
               </div> <!-- times-div-TestNG_Suits -->
             </div> <!-- times-div -->
@@ -262,38 +223,11 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.HomePageTestCase</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setup</span>
+              <div class="chronological-class-name">test2.TestNGParameterExample</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Test(testng)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">signInLink</span>
-                <span class="method-start">9530 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">loginTest</span>
-                <span class="method-start">10339 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">14222 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.HotelPageTestClass</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setup</span>
-                <span class="method-start">15010 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">searchHotel</span>
-                <span class="method-start">33924 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">41869 ms</span>
-              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

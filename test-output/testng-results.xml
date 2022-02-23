@@ -1,43 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-18T15:45:49 IST" name="TestNG Suits" finished-at="2022-02-18T15:46:36 IST" duration-ms="46778">
+  <suite started-at="2022-02-23T23:07:25 IST" name="TestNG Suits" finished-at="2022-02-23T23:07:41 IST" duration-ms="15534">
     <groups>
     </groups>
-    <test started-at="2022-02-18T15:45:49 IST" name="HomePage" finished-at="2022-02-18T15:46:36 IST" duration-ms="46778">
-      <class name="tests.HomePageTestCase">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HomePageTestCase@7f0eb4b4]" started-at="2022-02-18T15:45:49 IST" name="setup" finished-at="2022-02-18T15:45:59 IST" duration-ms="9496" status="PASS">
+    <test started-at="2022-02-23T23:07:25 IST" name="HomePage" finished-at="2022-02-23T23:07:41 IST" duration-ms="15534">
+      <class name="test2.TestNGParameterExample">
+        <test-method signature="Test(java.lang.String)[pri:0, instance:test2.TestNGParameterExample@441772e]" started-at="2022-02-23T23:07:26 IST" name="Test" finished-at="2022-02-23T23:07:41 IST" duration-ms="15376" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testng]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="signInLink()[pri:1, instance:tests.HomePageTestCase@7f0eb4b4]" started-at="2022-02-18T15:45:59 IST" name="signInLink" finished-at="2022-02-18T15:46:00 IST" duration-ms="783" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signInLink -->
-        <test-method signature="loginTest()[pri:2, instance:tests.HomePageTestCase@7f0eb4b4]" started-at="2022-02-18T15:46:00 IST" name="loginTest" finished-at="2022-02-18T15:46:04 IST" duration-ms="3880" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.HomePageTestCase@7f0eb4b4]" started-at="2022-02-18T15:46:04 IST" name="teardown" finished-at="2022-02-18T15:46:04 IST" duration-ms="788" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- tests.HomePageTestCase -->
-      <class name="tests.HotelPageTestClass">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HotelPageTestClass@1b7cc17c]" started-at="2022-02-18T15:46:04 IST" name="setup" finished-at="2022-02-18T15:46:23 IST" duration-ms="18913" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="searchHotel()[pri:0, instance:tests.HotelPageTestClass@1b7cc17c]" started-at="2022-02-18T15:46:23 IST" name="searchHotel" finished-at="2022-02-18T15:46:31 IST" duration-ms="7934" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchHotel -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.HotelPageTestClass@1b7cc17c]" started-at="2022-02-18T15:46:31 IST" name="teardown" finished-at="2022-02-18T15:46:36 IST" duration-ms="4880" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- tests.HotelPageTestClass -->
+        </test-method> <!-- Test -->
+      </class> <!-- test2.TestNGParameterExample -->
     </test> <!-- HomePage -->
   </suite> <!-- TestNG Suits -->
 </testng-results>
