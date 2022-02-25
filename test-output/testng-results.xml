@@ -1,37 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="7" passed="4" failed="0" skipped="0">
+<testng-results ignored="8" total="16" passed="8" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Test5]]>
+    </line>
+    <line>
+      <![CDATA[Test6]]>
+    </line>
+    <line>
+      <![CDATA[Execution done of  Test7]]>
+    </line>
+    <line>
+      <![CDATA[Execution done of Test8]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-02-24T22:59:13 IST" name="TestNG Suits" finished-at="2022-02-24T22:59:13 IST" duration-ms="121">
+  <suite started-at="2022-02-25T22:39:56 IST" name="Suite" finished-at="2022-02-25T22:39:56 IST" duration-ms="569">
     <groups>
-      <group name="sanity">
-        <method signature="TestNGGroupExample.test1()[pri:0, instance:test3.TestNGGroupExample@5af3afd9]" name="test1" class="test3.TestNGGroupExample"/>
-        <method signature="TestNGGroupExample.test4()[pri:0, instance:test3.TestNGGroupExample@5af3afd9]" name="test4" class="test3.TestNGGroupExample"/>
-        <method signature="TestNGGroupExample_01.test5()[pri:0, instance:test3.TestNGGroupExample_01@323b36e0]" name="test5" class="test3.TestNGGroupExample_01"/>
-        <method signature="TestNGGroupExample_01.test6()[pri:0, instance:test3.TestNGGroupExample_01@323b36e0]" name="test6" class="test3.TestNGGroupExample_01"/>
-      </group> <!-- sanity -->
+      <group name="Demo1">
+        <method signature="TestNGGroupsDefineExample.test3()[pri:0, instance:test4.TestNGGroupsDefineExample@5b8dfcc1]" name="test3" class="test4.TestNGGroupsDefineExample"/>
+        <method signature="TestNGGroupsDefineExample.test4()[pri:0, instance:test4.TestNGGroupsDefineExample@5b8dfcc1]" name="test4" class="test4.TestNGGroupsDefineExample"/>
+        <method signature="TestNGGroupsDefineExample_01.test7()[pri:0, instance:test4.TestNGGroupsDefineExample_01@2f9f7dcf]" name="test7" class="test4.TestNGGroupsDefineExample_01"/>
+        <method signature="TestNGGroupsDefineExample_01.test8()[pri:0, instance:test4.TestNGGroupsDefineExample_01@2f9f7dcf]" name="test8" class="test4.TestNGGroupsDefineExample_01"/>
+      </group> <!-- Demo1 -->
+      <group name="Demo">
+        <method signature="TestNGGroupsDefineExample.test1()[pri:0, instance:test4.TestNGGroupsDefineExample@7fa98a66]" name="test1" class="test4.TestNGGroupsDefineExample"/>
+        <method signature="TestNGGroupsDefineExample.test2()[pri:0, instance:test4.TestNGGroupsDefineExample@7fa98a66]" name="test2" class="test4.TestNGGroupsDefineExample"/>
+        <method signature="TestNGGroupsDefineExample_01.test5()[pri:0, instance:test4.TestNGGroupsDefineExample_01@158da8e]" name="test5" class="test4.TestNGGroupsDefineExample_01"/>
+        <method signature="TestNGGroupsDefineExample_01.test6()[pri:0, instance:test4.TestNGGroupsDefineExample_01@158da8e]" name="test6" class="test4.TestNGGroupsDefineExample_01"/>
+      </group> <!-- Demo -->
     </groups>
-    <test started-at="2022-02-24T22:59:13 IST" name="HomePage" finished-at="2022-02-24T22:59:13 IST" duration-ms="121">
-      <class name="test3.TestNGGroupExample_01">
-        <test-method signature="test5()[pri:0, instance:test3.TestNGGroupExample_01@323b36e0]" started-at="2022-02-24T22:59:13 IST" name="test5" finished-at="2022-02-24T22:59:13 IST" duration-ms="1" status="PASS">
+    <test started-at="2022-02-25T22:39:56 IST" name="DemoTest" finished-at="2022-02-25T22:39:56 IST" duration-ms="159">
+      <class name="test4.TestNGGroupsDefineExample_01">
+        <test-method signature="test5()[pri:0, instance:test4.TestNGGroupsDefineExample_01@158da8e]" started-at="2022-02-25T22:39:56 IST" name="test5" finished-at="2022-02-25T22:39:56 IST" duration-ms="3" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Test5]]>
+            </line>
           </reporter-output>
         </test-method> <!-- test5 -->
-        <test-method signature="test6()[pri:0, instance:test3.TestNGGroupExample_01@323b36e0]" started-at="2022-02-24T22:59:13 IST" name="test6" finished-at="2022-02-24T22:59:13 IST" duration-ms="2" status="PASS">
+        <test-method signature="test6()[pri:0, instance:test4.TestNGGroupsDefineExample_01@158da8e]" started-at="2022-02-25T22:39:56 IST" name="test6" finished-at="2022-02-25T22:39:56 IST" duration-ms="16" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Test6]]>
+            </line>
           </reporter-output>
         </test-method> <!-- test6 -->
-      </class> <!-- test3.TestNGGroupExample_01 -->
-      <class name="test3.TestNGGroupExample">
-        <test-method signature="test1()[pri:0, instance:test3.TestNGGroupExample@5af3afd9]" started-at="2022-02-24T22:59:13 IST" name="test1" finished-at="2022-02-24T22:59:13 IST" duration-ms="40" status="PASS">
+      </class> <!-- test4.TestNGGroupsDefineExample_01 -->
+      <class name="test4.TestNGGroupsDefineExample">
+        <test-method signature="test1()[pri:0, instance:test4.TestNGGroupsDefineExample@7fa98a66]" started-at="2022-02-25T22:39:56 IST" name="test1" finished-at="2022-02-25T22:39:56 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method signature="test4()[pri:0, instance:test3.TestNGGroupExample@5af3afd9]" started-at="2022-02-24T22:59:13 IST" name="test4" finished-at="2022-02-24T22:59:13 IST" duration-ms="2" status="PASS">
+        <test-method signature="test2()[pri:0, instance:test4.TestNGGroupsDefineExample@7fa98a66]" started-at="2022-02-25T22:39:56 IST" name="test2" finished-at="2022-02-25T22:39:56 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+      </class> <!-- test4.TestNGGroupsDefineExample -->
+    </test> <!-- DemoTest -->
+    <test started-at="2022-02-25T22:39:56 IST" name="DemoTestExample" finished-at="2022-02-25T22:39:56 IST" duration-ms="94">
+      <class name="test4.TestNGGroupsDefineExample_01">
+        <test-method signature="test7()[pri:0, instance:test4.TestNGGroupsDefineExample_01@2f9f7dcf]" started-at="2022-02-25T22:39:56 IST" name="test7" finished-at="2022-02-25T22:39:56 IST" duration-ms="23" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Execution done of  Test7]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test7 -->
+        <test-method signature="test8()[pri:0, instance:test4.TestNGGroupsDefineExample_01@2f9f7dcf]" started-at="2022-02-25T22:39:56 IST" name="test8" finished-at="2022-02-25T22:39:56 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Execution done of Test8]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test8 -->
+      </class> <!-- test4.TestNGGroupsDefineExample_01 -->
+      <class name="test4.TestNGGroupsDefineExample">
+        <test-method signature="test3()[pri:0, instance:test4.TestNGGroupsDefineExample@5b8dfcc1]" started-at="2022-02-25T22:39:56 IST" name="test3" finished-at="2022-02-25T22:39:56 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method signature="test4()[pri:0, instance:test4.TestNGGroupsDefineExample@5b8dfcc1]" started-at="2022-02-25T22:39:56 IST" name="test4" finished-at="2022-02-25T22:39:56 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test4 -->
-      </class> <!-- test3.TestNGGroupExample -->
-    </test> <!-- HomePage -->
-  </suite> <!-- TestNG Suits -->
+      </class> <!-- test4.TestNGGroupsDefineExample -->
+    </test> <!-- DemoTestExample -->
+  </suite> <!-- Suite -->
 </testng-results>
